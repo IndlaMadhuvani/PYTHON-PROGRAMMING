@@ -1,0 +1,64 @@
+1)try:
+    x=10/0
+except Exception as e:
+        print("An error occured:",str(e))
+
+
+An error occured: division by zero
+
+
+2)try:
+    num=int(input("Enter a number:"))
+    result=10/num
+    print("Result:",result)
+except Valueerror:
+    print("Error:Invalid input!Please enter a valid number")
+except zeroDivisionError:
+    print("ERROR:An error occured: division by zero")	
+
+Enter a number:2
+Result: 5.0
+
+
+3)try:
+    num=int(input("Enter a number:"))
+    result=10/num
+except Valueerror:
+    print("Error:INVALID input!please enter a valid number")
+else:
+    print("Result:",result)
+
+
+Enter a number:10
+Result: 1.0
+
+
+4)try:
+    file=open("my_file.txt","r")
+except IOError:
+    print("Error:UNABLE to read the file!:")
+finally:
+    file.close()
+    
+Error:UNABLE to read the file!:
+Traceback (most recent call last):
+  File "C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/phhh.py", line 6, in <module>
+    file.close()
+NameError: name 'file' is not defined
+
+
+5)try:
+    x=int(input("Enter a number upto 100:"))
+    if x>100:
+        raise ValueError(x)
+except valueerror:
+    print(x,"is out of allowed range")
+else:
+    print(x,"is within allowed range")
+
+
+Enter a number upto 100:67
+67 is within allowed range
+
+
+
