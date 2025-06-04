@@ -1,0 +1,110 @@
+>>>a=10
+
+>>>b=10
+
+>>>print(a is b)
+
+>>>print(a is not b)
+
+>>>print(id(a))
+
+>>>print(id(b))
+
+
+True
+
+False
+
+135874974492968
+
+135874974492968
+
+
+
+>>> a=10
+>>> b=20
+>>> print(a is b)
+False
+>>> print(a is not b)
+True
+>>> print(id(a))
+8770798976352
+>>> print(id(b))
+8770798976672
+>>> print(a==b)
+False
+
+
+
+ >>>authorised_users=['admin','madhu','vani']
+>>> username =input("Enter your name:")
+Enter your name:madhu
+>>> if username in authorised_users:
+...         print(f"welcome{username}! you are authorised")
+... else:
+...           print(f"{username}!you are not an authorised user")
+...
+welcomemadhu! you are authorised
+
+
+a=float(input("enter a first number"))
+
+b=float(input("enter a second number"))
+
+c=float(input("enter a third number"))
+
+if a>b and a>c:
+  
+  print(f"{a} is maximum")
+
+elif a<b and b>c:
+ 
+   print(f"{b} is maximum")
+
+elif a<c and b<c:
+  
+  print(f"{c} is maximum")
+else:
+ print("{c} is minimum")des
+
+enter a first number 12
+
+enter a second number 13
+ 
+enter a third number56 
+
+56.0 is maximum
+
+
+num=int(input("enter a number"))
+
+if num%2==0:
+  
+  print(f"{num} number is even")
+
+else :
+    
+print(f"{num} number is odd")
+
+    
+enter a number23
+
+23 number is odd
+
+
+
+year=int(input("Enter a year"))
+
+if year%4==0:
+    
+ print(f"{year} is leap year")
+
+else:
+    
+  print(f"{year} is not a leap year")
+
+
+Enter a year2006
+
+2006 is not a leap year
+

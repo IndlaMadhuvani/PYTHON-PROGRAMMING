@@ -1,0 +1,107 @@
+mylist=[]
+n=int(input("Enter any number:"))
+for x in range(n):
+    num=int(input("Enter a number:"))
+    mylist.append(num)
+print("My updated list:",mylist)
+
+
+Enter any number:5
+Enter a number:78
+Enter a number:6579
+Enter a number:6544
+Enter a number:666
+Enter a number:88
+My updated list: [78, 6579, 6544, 666, 88]
+
+
+l=[10,20,30,"sravani",(10+20j),True]
+print(l[3])
+print(l[-2])
+print(l[1:4])
+print(l)
+l.remove(30)
+print(l)
+
+sravani
+(10+20j)
+[20, 30, 'sravani']
+[10, 20, 30, 'sravani', (10+20j), True]
+[10, 20, 'sravani', (10+20j), True]
+
+
+l=[10,20,30,57,89]
+print(len(l))
+print(l)
+print(max(l))
+print(min(l))
+
+5
+[10, 20, 30, 57, 89]
+89
+10
+
+
+mylist=[8,59,68,67]
+sum=0
+for i in mylist:
+    sum=sum+i
+print("The sum is:",sum)    
+
+The sum is: 202
+
+
+s=input("Enter a string")
+print(s.split())
+
+Enter a string madhu
+['madhu']
+
+
+n=int(input("Enter the value of n:"))
+list=[]
+for i in range(n):
+    num=int(input("Enter a number"))
+    list.append(num)
+    print("Even numbers are")
+    print("[",end="")
+    for num in list:
+        if num%2==0:
+            print(num,end=",")
+        print("]")  
+               
+
+Enter the value of n:3
+Enter a number89
+Even numbers are
+[]
+Enter a number67
+Even numbers are
+[]
+]
+Enter a number42
+Even numbers are
+[]
+]
+42,]
+
+
+
+
+list=[10,20,30,"Jeevan",True,(16+3j),False,True]
+print(list)
+x=list.copy()
+print(x)
+list.pop(3)
+print(list)
+del list[2]
+print(list)
+list.reverse()
+print(list)
+
+
+[10, 20, 30, 'Jeevan', True, (16+3j), False, True]
+[10, 20, 30, 'Jeevan', True, (16+3j), False, True]
+[10, 20, 30, True, (16+3j), False, True]
+[10, 20, True, (16+3j), False, True]
+[True, False, (16+3j), True, 20, 10]
