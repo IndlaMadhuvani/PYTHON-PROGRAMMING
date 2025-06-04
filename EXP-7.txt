@@ -1,0 +1,62 @@
+def fibonacci(Number):
+    if(Number==0):
+        return 0
+    elif Number==1:
+        return 1
+    else:
+        return fibonacci(Number-2)+fibonacci(Number-1)
+Number=int(input("Please enter the fibonacci Number Range="))
+sum=0
+for Num in range(Number):
+    print(fibonacci(Num),end='')
+    sum=sum+fibonacci(Num)
+    print("\n The sum of fibonacci series numbers=%d"%sum)
+
+
+Please enter the fibonacci Number Range=5
+0
+ The sum of fibonacci series numbers=0
+1
+ The sum of fibonacci series numbers=1
+1
+ The sum of fibonacci series numbers=2
+2
+ The sum of fibonacci series numbers=4
+3
+ The sum of fibonacci series numbers=7
+
+
+
+def fact(n):
+    if n==0:
+        return 0
+    elif n==1:
+        return 1
+    else:
+        return n*fact(n-1)
+n=int(input("Enter a value:"))
+print("Factorial value of",n,"is:",fact(n))
+      
+Enter a value:5
+Factorial value of 5 is: 120
+
+
+def gcd(a,b):
+    if b==0:
+        return a
+    else:
+        return gcd(b,a%b)
+x=input("Enter the first number:")
+y=input("Enter the second integer:")
+if x.digit() and y.isdigit():
+    a=int(x)
+    b=int(y)
+    result=gcd(a,b)
+    print("The GCD of {a} and {b} is :",result)
+else:
+    print("Please enter valid interger:")
+
+
+Enter the first number:36
+Enter the second integer:18
+The GCD of 36 and 18 is : 18
