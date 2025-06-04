@@ -1,0 +1,159 @@
+
+>>>a=10
+>>>b=2
+>>>print(a+b)
+12
+>>>print(a-b)
+8
+>>>print(a*b)
+20
+>>>print(a/b)
+5.0
+>>>print(a//b)
+5
+>>> print(a**b)
+100
+
+
+
+>>> a=int(input("enter first number"))
+enter first number 20
+>>> b=int(input("enter second number"))
+enter second number 15
+>>> print(a+b)
+35
+>>> print(a-b)
+5
+>>> print(a*b)
+300
+>>> print(a/b)
+1.3333333333333333
+>>> print(a//b)
+1
+>>> print(a**b)
+32768000000000000000
+
+
+>>> a=eval(input("enter first number"))
+enter first number 10.5
+>>> b=eval(input("enter second number"))
+enter second number 2
+>>> print(a+b)
+12.5
+>>> print(a-b)
+8.5
+>>> print(a*b)
+21.0
+>>> print(a/b)
+5.25
+>>> print(a//b)
+5.0
+>>> print(a**b)
+110.25
+
+
+
+
+>>> a=10
+>>> b=20
+>>> print(a>b)
+False
+>>> print(a<b)
+True
+>>> print(a>=b)
+False
+>>> print(a<=b)
+True
+
+
+>>> a="milky"
+>>> b="chintu"
+>>> print(a>b)
+True
+>>> print(a<b)
+False
+>>> print(a>=b)
+True
+>>> print(a<=b)
+False
+
+
+>>> a="DADDY"
+>>> b="MUMMY"
+>>> print(a>b)
+False
+>>> print(a<b)
+True
+>>> print(a<=b)
+True
+>>> print(a>=b)
+False
+
+>>> a=int(input("enter first number:"))
+enter first number: 10
+>>> b=int(input("enter second number:"))
+enter second number:5
+>>> temp=a
+>>> a=b
+>>> b=temp
+>>> print("After swapping numbers are:")
+After swapping numbers are:
+>>> print("--------------")
+--------------
+>>> print("first value is:",a)
+first value is: 5
+>>> print("second value is:",b)
+second value is: 10
+
+
+>>> a=10
+>>> b=10
+>>> a==b
+True
+>>> a=10
+>>> b=10
+>>> a!=b
+False
+
+
+
+>>> a=float(input("enter first number:"))
+enter first number:3.4
+>>> b=float(input("enter second number:"))
+enter second number:4.6
+>>> c=float(input("enter third number:"))
+enter third number:5.7
+>>> s=(a+b+c)/2
+>>> area=(s*(s-a)*(s-b)*(s-c))**0.5
+>>> print(area)
+7.819788600083762
+>>> print("The area of triangle is:",area)
+The area of triangle is: 7.819788600083762
+
+
+>>> a=float(input("enter length:"))
+enter length:3.5
+>>> b=int(input("enter breadth:"))
+enter breadth:2
+>>> area=a*b
+>>> print(area)
+7.0
+>>> print("The area of rectangle is:",area)
+The area of rectangle is: 7.0
+>>> perimeter=2*(a+b)
+>>> print("The perimeter of rectangle is:",perimeter)
+The perimeter of rectangle is: 11.0
+
+
+>>> d=float(input("Enter the diameter:"))
+Enter the diameter:20
+>>> radius=d/2
+>>> print(radius)
+10.0
+>>> print("The radius of circle is:",radius)
+The radius of circle is: 10.0
+>>> circumference=float(input("Enter circumference of a circle:"))
+Enter circumference of a circle:12
+>>> radius=circumference/(2*3.14)
+>>> print("The radius of circle is:",radius)
+The radius of circle is: 1.910828025477707
