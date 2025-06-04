@@ -1,0 +1,36 @@
+1)f=open("demo.txt","r")
+print("file objecct is opened")
+print(f)
+data=f.read()
+print(data)
+
+file objecct is opened
+
+<_io.TextIOWrapper name='C:\\Users\\Administrator\\Desktop\\34 LAB\\PYTHON\\demo.txt' mode='r' encoding='cp1252'>
+GOOD MORNING!!
+PYTHON
+
+2)file_path="output.txt"
+with open(file_path,"w")as file:
+    file.write("HellO,world!:\n")
+    file.write("This is sample text,")
+print("content written to:",file_path)
+
+content written to: output.txt
+
+
+3) f=open(r"C:\Users\Administrator\Desktop\34 LAB\PYTHON\demo.txt","r")
+data=f.read()
+print("Total number of words in a given file is:",len(data))
+
+
+Total number of words in a given file is: 22
+
+4)f=open(r"C:\Users\Administrator\Desktop\34 LAB\PYTHON\demo.txt","r")
+data=f.read()
+lw=data.split()
+print("Total number of words in a given file is:",len(data))
+print("Available words are:",lw)
+
+Total number of words in a given file is: 22
+Available words are: ['GOOD', 'MORNING!!', 'PYTHON']
