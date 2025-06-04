@@ -34,3 +34,40 @@ print("Available words are:",lw)
 
 Total number of words in a given file is: 22
 Available words are: ['GOOD', 'MORNING!!', 'PYTHON']
+
+
+5)f=open(r"C:\Users\Administrator\Desktop\34 LAB\PYTHON\demo.txt","r")
+data=f.read()
+lw=data.split()
+d={}
+for word in lw:
+    if word not in d:
+        d[word]=1
+    else:
+        d[word]=d[word]+1
+print(d)        
+
+{'GOOD': 1, 'MORNING!!': 1, 'PYTHON': 1}
+
+
+6)f=open(r"C:\Users\Administrator\Desktop\34 LAB\PYTHON\demo.txt","r")
+print("The file pointer is at byte:",f.tell())
+content=f.read()
+print("After reading,the file pointer is at:",f.tell())
+
+
+The file pointer is at byte: 0
+After reading,the file pointer is at: 24
+
+7)
+f=open(r"C:\Users\Administrator\Desktop\34 LAB\PYTHON\demo.txt","r")
+print("The file pointer is at byte:",f.tell())
+f.seek(10)
+print("After reading, the file pointer is at:",f.tell())
+
+
+The file pointer is at byte: 0
+After reading, the file pointer is at: 10
+
+
+        
